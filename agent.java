@@ -282,7 +282,7 @@ class agent
 		return;
 	}
  }
-	
+	/* Replace variables in statement with constants in query */
 	public static String Unify(String ant,String x)
 	{
 		ant=ant.trim();
