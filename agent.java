@@ -61,7 +61,9 @@ class agent
 			/*Call Backward Chaining algorithm on the given query*/
 			BackwardChaining(query);
 			
-			/* Process results of Backward Chaining to see if query can be inferred to be true or false from the given knowledge base */
+			/* Process results of Backward Chaining to see if query can be inferred to be true or 
+			   false from the given knowledge base 
+			*/
 			for(Statement st:kb.statements)
 			{
 				
@@ -124,7 +126,8 @@ class agent
 	{
 	
 	/* Check if query is already present in the Knowledge Base, if it is, return true.
-	   Else, check if it matches the consequent of any statement with implication, if it does then call Backward Chaining on each of the antecedents 
+	   Else, check if it matches the consequent of any statement with implication, if it does 
+	   then call Backward Chaining on each of the antecedents in the statement
 	   with the variables substituted or Unified with the constants in the query
 	   Continue till all statements in the Knowledge Base have been visited 
 	*/
